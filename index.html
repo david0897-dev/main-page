@@ -6,20 +6,20 @@
   
 <body>
   <! -- Navtop -->
-	<div class="topnav">
-		<a class="active" href="https://david0897-dev.github.io/ticbach2/">Página principal</a>
-		<a href="https://david0897-dev.github.io/peliculas-mejor-valoradas/">Películas mejor valoradas</a>
-		<a href="https://david0897-dev.github.io/grandes-peliculas/">10 grandes películas</a>
-      <div class="dropdown">
-          <a class="dropbtn">Dropdown
-	    <i class="fa fa-caret-down"></i>
-	  </a>
-      <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
+      <div class="topnav">
+	  <a class="active" href="https://david0897-dev.github.io/ticbach2/"><i class="fa fa-fw fa-home"></i></a>
+	  <a href="https://david0897-dev.github.io/peliculas-mejor-valoradas/">Películas mejor valoradas</a>
+	  <a href="https://david0897-dev.github.io/grandes-peliculas/">10 grandes películas</a>
+      	<div class="dropdown">
+          	<a class="dropbtn">Dropdown
+	    		<i class="fa fa-caret-down"></i>
+	  	</a>
+      	<div class="dropdown-content">
+          	<a href="#">Link 1</a>
+          	<a href="#">Link 2</a>
+      	</div>
+      	</div>
       </div>
-      </div>
-	  </div>
 	<style>
 	.topnav {
 		background-color: #333;
@@ -41,6 +41,12 @@
 		background-color: #04AA6D;
 		color: white;
   	}
+	@media screen and (max-width: 500px) {
+		.topnav a {
+			float: none;
+			display: block;
+		}
+	}
   .dropdown {
     float: left;
     overflow: hidden;
