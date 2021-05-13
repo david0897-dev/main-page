@@ -29,20 +29,20 @@
 	  <a href="#">navtop2</a>
 	</div>
 	<div class="righttopnav">
-	  <a style="padding-left:10px; padding-right:10px" href="https://twitter.com/0897david0897" uk-icon="icon: twitter; ratio: 4"></a>
-	  <a style="padding-left:10px; padding-right:10px" href="https://www.youtube.com/channel/UC3Ur6oss4A6tIFFUzFMnG4A" uk-icon="icon: youtube; ratio: 4"></i></a>
-	  <a style="padding-left:10px; padding-right:10px" href="https://www.twitch.tv/david0897" uk-icon="icon: twitch; ratio: 4"></a>
+	  <a style="padding-left:10px; padding-right:10px" href="https://twitter.com/0897david0897" uk-icon="icon: twitter; ratio: 1.5"></a>
+	  <a style="padding-left:10px; padding-right:10px" href="https://www.youtube.com/channel/UC3Ur6oss4A6tIFFUzFMnG4A" uk-icon="icon: youtube; ratio: 1.5"></i></a>
+	  <a style="padding-left:10px; padding-right:10px" href="https://www.twitch.tv/david0897" uk-icon="icon: twitch; ratio: 1.5"></a>
 	</div>
-      	<button class="uk-button uk-button-default" type="button"><p style="color:white">Dropdown</button>
-<div uk-dropdown align="center">
-    <ul class="uk-nav uk-dropdown-nav">
-        <li><a href="#">Item1</a></li>
-        <li class="uk-nav-divider"></li>
-        <li><a href="#">Item2</a></li>
-        <li class="uk-nav-divider"></li>
-        <li><a href="#">Item3</a></li>
-    </ul>
-</div>
+	<nav role="navigation">
+      	<ul>
+		<li><a href="#">Two</a>
+      		<ul class="dropdown">
+        		<li><a href="#">Sub-1</a></li>
+        		<li><a href="#">Sub-2</a></li>
+        		<li><a href="#">Sub-3</a></li>
+      		</ul>
+		</li>
+  	</ul>
 </div>
       </div>
 	<style>
@@ -54,7 +54,7 @@
 		float: right;
   		color: #f2f2f2;
  		text-align: center;
-  		padding: 18px 16px;
+  		padding: 20.5px 16px;
   		text-decoration: none;
 		font-size: 17px;
 		}
@@ -62,7 +62,7 @@
 		float: left;
   		color: #f2f2f2;
  		text-align: center;
-  		padding: 18px 16px;
+  		padding: 20.5px 16px;
   		text-decoration: none;
 		font-size: 17px;	
   	}
@@ -80,6 +80,66 @@
 			display: block;
 		}
 	}
+<!-- Dropdown menu -->
+	a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: monospace;
+}
+
+ul {
+  background: darkorange;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #fff;
+  background: darkorange;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+li a {
+  color: #fff;
+}
+
+li:hover {
+  background: red;
+  cursor: pointer;
+}
+
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+</style>
 	<h1 align="center">¡PÁGINA EN CONSTRUCCIÓN!<br><image src="https://i.ibb.co/rvgJR2X/source.gif" height="500"></h1>
 </body>
 </html>
